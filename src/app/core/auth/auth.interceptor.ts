@@ -13,7 +13,15 @@ export class AuthInterceptor implements HttpInterceptor {
 
   intercept(req: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     const headers = this.auth.buildAuthHeaders();
-    const authReq = headers.keys().length ? req.clone({ headers: req.headers.concat(headers) }) : req;
+    const headerMap = headers.keys().reduce((acc, key) => {
+      const value = headers.get(key);
+      if (value !== null) {
+        acc[key] = value;
+      }
+      return acc;
+    }, {} as Record<string, string>);
+
+    const authReq = Object.keys(headerMap).length ? req.clone({ setHeaders: headerMap }) : req;
 
     return next.handle(authReq).pipe(
       catchError((error: HttpErrorResponse) => {
