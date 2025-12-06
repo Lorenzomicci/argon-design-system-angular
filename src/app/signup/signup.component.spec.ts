@@ -1,6 +1,15 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { of } from 'rxjs';
+import { AuthService } from '../core/auth/auth.service';
 import { SignupComponent } from './signup.component';
+
+class AuthServiceStub {
+  register() {
+    return of();
+  }
+}
 
 describe('SignupComponent', () => {
   let component: SignupComponent;
@@ -8,7 +17,9 @@ describe('SignupComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SignupComponent ]
+      imports: [ReactiveFormsModule, RouterTestingModule],
+      declarations: [ SignupComponent ],
+      providers: [{ provide: AuthService, useClass: AuthServiceStub }]
     })
     .compileComponents();
   }));

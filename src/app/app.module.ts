@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app.routing';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
+import { AuthInterceptor } from './core/auth/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,19 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     NgbModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     RouterModule,
     AppRoutingModule,
     HomeModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
