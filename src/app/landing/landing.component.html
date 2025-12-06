@@ -1,494 +1,423 @@
 <main>
-  <div class="position-relative">
-    <!-- shape Hero -->
-    <section class="section section-lg section-shaped pb-250">
+  <div class="position-relative bg-gradient-primary">
+    <section class="section section-lg section-hero pb-7">
       <div class="shape shape-style-1 shape-default">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
-      <div class="container py-lg-md d-flex">
-        <div class="col px-0">
-          <div class="row">
-            <div class="col-lg-6">
-              <h1 class="display-3  text-white">A beautiful Design System
-                <span>completed with examples</span>
-              </h1>
-              <p class="lead  text-white">The design system comes with four pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
-              <div class="btn-wrapper">
-                <a href="https://demos.creative-tim.com/argon-design-system-angular/documentation/alerts?ref=adsa-landing-page" class="btn btn-info btn-icon mb-3 mb-sm-0">
-                  <span class="btn-inner--icon"><i class="fa fa-code"></i></span>
-                  <span class="btn-inner--text">Components</span>
-                </a>
-                <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page" class="btn btn-white btn-icon mb-3 mb-sm-0">
-                  <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
-                  <span class="btn-inner--text">Download Angular</span>
-                </a>
+      <div class="container py-lg-md d-flex align-items-center">
+        <div class="row w-100">
+          <div class="col-lg-7">
+            <h1 class="display-3 text-white mb-3">Hackathon Command Center</h1>
+            <p class="lead text-white">Interfaccia completa per orchestrare autenticazione, hackathon, iscrizioni, team, consegne e valutazioni seguendo le API descritte nel documento.</p>
+            <div class="d-flex flex-wrap mt-4 gap-2">
+              <a routerLink="/register" class="btn btn-success btn-lg mr-2 mb-2">Crea un account</a>
+              <a routerLink="/login" class="btn btn-outline-white btn-lg mb-2">Accedi come organizzatore</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card shadow border-0">
+              <div class="card-body">
+                <h4 class="mb-3">Moduli coperti</h4>
+                <ul class="list-unstyled mb-0">
+                  <li class="py-1"><i class="ni ni-check-bold text-success mr-2"></i>Auth &amp; profili</li>
+                  <li class="py-1"><i class="ni ni-check-bold text-success mr-2"></i>Hackathon, tracks e iscrizioni</li>
+                  <li class="py-1"><i class="ni ni-check-bold text-success mr-2"></i>Team, inviti e progetti</li>
+                  <li class="py-1"><i class="ni ni-check-bold text-success mr-2"></i>Consegne, giuria e classifiche</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- SVG separator -->
       <div class="separator separator-bottom separator-skew">
         <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
         </svg>
       </div>
     </section>
-    <!-- 1st Hero Variation -->
   </div>
-  <section class="section section-lg pt-lg-0 mt--200">
+
+  <section class="section bg-white pb-5 pt-4">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-          <div class="row row-grid">
-            <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0">
-                <div class="card-body py-5">
-                  <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                    <i class="ni ni-check-bold"></i>
-                  </div>
-                  <h6 class="text-primary text-uppercase">Download Argon</h6>
-                  <p class="description mt-3">Argon is a great free UI package based on Angular that includes the most important components and features.</p>
-                  <div>
-                    <span class="badge badge-pill badge-primary">angular</span>
-                    <span class="badge badge-pill badge-primary">ng-bootstrap</span>
-                    <span class="badge badge-pill badge-primary">creative</span>
-                  </div>
-                  <a href="javascript:void(0)" class="btn btn-primary mt-4">Learn more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0">
-                <div class="card-body py-5">
-                  <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
-                    <i class="ni ni-istanbul"></i>
-                  </div>
-                  <h6 class="text-success text-uppercase">Build Something</h6>
-                  <p class="description mt-3">Argon is a great free UI package based on Angular that includes the most important components and features.</p>
-                  <div>
-                    <span class="badge badge-pill badge-success">business</span>
-                    <span class="badge badge-pill badge-success">vision</span>
-                    <span class="badge badge-pill badge-success">success</span>
-                  </div>
-                  <a href="javascript:void(0)" class="btn btn-success mt-4">Learn more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card card-lift--hover shadow border-0">
-                <div class="card-body py-5">
-                  <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                    <i class="ni ni-planet"></i>
-                  </div>
-                  <h6 class="text-warning text-uppercase">Prepare Launch</h6>
-                  <p class="description mt-3">Argon is a great free UI package based on Angular that includes the most important components and features.</p>
-                  <div>
-                    <span class="badge badge-pill badge-warning">marketing</span>
-                    <span class="badge badge-pill badge-warning">product</span>
-                    <span class="badge badge-pill badge-warning">launch</span>
-                  </div>
-                  <a href="javascript:void(0)" class="btn btn-warning mt-4">Learn more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section-lg">
-    <div class="container">
-      <div class="row row-grid align-items-center">
-        <div class="col-md-6 order-md-2">
-          <img src="./assets/img/theme/promo-1.png" class="img-fluid floating">
-        </div>
-        <div class="col-md-6 order-md-1">
-          <div class="pr-md-5">
-            <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-              <i class="ni ni-settings-gear-65"></i>
-            </div>
-            <h3>Awesome features</h3>
-            <p>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
-            <ul class="list-unstyled mt-5">
-              <li class="py-2">
-                <div class="d-flex align-items-center">
-                  <div>
-                    <div class="badge badge-circle badge-success mr-3">
-                      <i class="ni ni-settings-gear-65"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h6 class="mb-0">Carefully crafted components</h6>
-                  </div>
-                </div>
-              </li>
-              <li class="py-2">
-                <div class="d-flex align-items-center">
-                  <div>
-                    <div class="badge badge-circle badge-success mr-3">
-                      <i class="ni ni-html5"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h6 class="mb-0">Amazing page examples</h6>
-                  </div>
-                </div>
-              </li>
-              <li class="py-2">
-                <div class="d-flex align-items-center">
-                  <div>
-                    <div class="badge badge-circle badge-success mr-3">
-                      <i class="ni ni-satisfied"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <h6 class="mb-0">Super friendly support team</h6>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section bg-secondary">
-    <div class="container">
-      <div class="row row-grid align-items-center">
-        <div class="col-md-6">
-          <div class="card bg-default shadow border-0">
-            <img src="./assets/img/theme/img-1-1200x1000.jpg" class="card-img-top">
-            <blockquote class="card-blockquote">
-              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
-                <polygon points="0,52 583,95 0,95" class="fill-default" />
-                <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
-              </svg>
-              <h4 class="display-3 font-weight-bold text-white">Design System</h4>
-              <p class="lead text-italic text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens.</p>
-            </blockquote>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="pl-md-5">
-            <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
-              <i class="ni ni-settings"></i>
-            </div>
-            <h3>Our customers</h3>
-            <p class="lead">Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript.</p>
-            <p>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
-            <p>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
-            <a href="javascript:void(0)" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful websites</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section pb-0 bg-gradient-warning">
-    <div class="container">
-      <div class="row row-grid align-items-center">
-        <div class="col-md-6 order-lg-2 ml-lg-auto">
-          <div class="position-relative pl-md-5">
-            <img src="./assets/img/ill/ill-2.svg" class="img-center img-fluid">
-          </div>
-        </div>
-        <div class="col-lg-6 order-lg-1">
-          <div class="d-flex px-3">
-            <div>
-              <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-                <i class="ni ni-building text-primary"></i>
-              </div>
-            </div>
-            <div class="pl-4">
-              <h4 class="display-3 text-white">Modern Interface</h4>
-              <p class="text-white">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-            </div>
-          </div>
-          <div class="card shadow shadow-lg--hover mt-5">
-            <div class="card-body">
-              <div class="d-flex px-3">
-                <div>
-                  <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                    <i class="ni ni-satisfied"></i>
-                  </div>
-                </div>
-                <div class="pl-4">
-                  <h5 class="title text-success">Awesome Support</h5>
-                  <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                  <a href="javascript:void(0)" class="text-success">Learn more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card shadow shadow-lg--hover mt-5">
-            <div class="card-body">
-              <div class="d-flex px-3">
-                <div>
-                  <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                    <i class="ni ni-active-40"></i>
-                  </div>
-                </div>
-                <div class="pl-4">
-                  <h5 class="title text-warning">Modular Components</h5>
-                  <p>The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever.</p>
-                  <a href="javascript:void(0)" class="text-warning">Learn more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- SVG separator -->
-    <div class="separator separator-bottom separator-skew zindex-100">
-      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-      </svg>
-    </div>
-  </section>
-  <section class="section section-lg">
-    <div class="container">
-      <div class="row justify-content-center text-center mb-lg">
+      <div class="row mb-4">
         <div class="col-lg-8">
-          <h2 class="display-3">The amazing Team</h2>
-          <p class="lead text-muted">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record maximum.</p>
+          <h2 class="mb-2">Hub operativo aderente all'API</h2>
+          <p class="text-muted mb-0">Ogni carta riproduce il flusso previsto dai metodi REST: creazione evento, tracks, iscrizioni, team, consegne e voti strutturati.</p>
         </div>
       </div>
+
       <div class="row">
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/theme/team-1-800x800.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
-            <div class="pt-4 text-center">
-              <h5 class="title">
-                <span class="d-block mb-1">Ryan Tompson</span>
-                <small class="h6 text-muted">Web Developer</small>
-              </h5>
-              <div class="mt-3">
-                <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
-                  <i class="fa fa-dribbble"></i>
-                </a>
+        <div class="col-lg-6 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="mb-0">Crea / aggiorna Hackathon</h4>
+                <span class="badge badge-info">/api/hackathons</span>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/theme/team-2-800x800.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
-            <div class="pt-4 text-center">
-              <h5 class="title">
-                <span class="d-block mb-1">Romina Hadid</span>
-                <small class="h6 text-muted">Marketing Strategist</small>
-              </h5>
-              <div class="mt-3">
-                <a href="javascript:void(0)" class="btn btn-primary btn-icon-only rounded-circle">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="javascript:void(0)" class="btn btn-primary btn-icon-only rounded-circle">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="javascript:void(0)" class="btn btn-primary btn-icon-only rounded-circle">
-                  <i class="fa fa-dribbble"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/theme/team-3-800x800.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
-            <div class="pt-4 text-center">
-              <h5 class="title">
-                <span class="d-block mb-1">Alexander Smith</span>
-                <small class="h6 text-muted">UI/UX Designer</small>
-              </h5>
-              <div class="mt-3">
-                <a href="javascript:void(0)" class="btn btn-info btn-icon-only rounded-circle">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="javascript:void(0)" class="btn btn-info btn-icon-only rounded-circle">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="javascript:void(0)" class="btn btn-info btn-icon-only rounded-circle">
-                  <i class="fa fa-dribbble"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/theme/team-4-800x800.jpg" class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px;">
-            <div class="pt-4 text-center">
-              <h5 class="title">
-                <span class="d-block mb-1">John Doe</span>
-                <small class="h6 text-muted">Founder and CEO</small>
-              </h5>
-              <div class="mt-3">
-                <a href="javascript:void(0)" class="btn btn-success btn-icon-only rounded-circle">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="javascript:void(0)" class="btn btn-success btn-icon-only rounded-circle">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="javascript:void(0)" class="btn btn-success btn-icon-only rounded-circle">
-                  <i class="fa fa-dribbble"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section-lg pt-0">
-    <div class="container">
-      <div class="card bg-gradient-warning shadow-lg border-0">
-        <div class="p-5">
-          <div class="row align-items-center">
-            <div class="col-lg-8">
-              <h3 class="text-white">We made website building easier for you.</h3>
-              <p class="lead text-white mt-3">I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture.</p>
-            </div>
-            <div class="col-lg-3 ml-lg-auto">
-              <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page" class="btn btn-lg btn-block btn-white">Download Angular</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section section-lg bg-gradient-default">
-    <div class="container pt-lg pb-300">
-      <div class="row text-center justify-content-center">
-        <div class="col-lg-10">
-          <h2 class="display-3 text-white">Build something</h2>
-          <p class="lead text-white">According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice.</p>
-        </div>
-      </div>
-      <div class="row row-grid mt-5">
-        <div class="col-lg-4">
-          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-            <i class="ni ni-settings text-primary"></i>
-          </div>
-          <h5 class="text-white mt-3">Building tools</h5>
-          <p class="text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <div class="col-lg-4">
-          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-            <i class="ni ni-ruler-pencil text-primary"></i>
-          </div>
-          <h5 class="text-white mt-3">Grow your market</h5>
-          <p class="text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <div class="col-lg-4">
-          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
-            <i class="ni ni-atom text-primary"></i>
-          </div>
-          <h5 class="text-white mt-3">Launch time</h5>
-          <p class="text-white mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-    <!-- SVG separator -->
-    <div class="separator separator-bottom separator-skew zindex-100">
-      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-      </svg>
-    </div>
-  </section>
-  <section class="section section-lg pt-lg-0 section-contact-us">
-    <div class="container">
-      <div class="row justify-content-center mt--300">
-        <div class="col-lg-8">
-          <div class="card bg-gradient-secondary shadow">
-            <div class="card-body p-lg-5">
-              <h4 class="mb-1">Want to work with us?</h4>
-              <p class="mt-0">Your project is very important to us.</p>
-              <div class="form-group mt-5" [ngClass]="{'focused':focus===true}">
-                <div class="input-group input-group-alternative">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-user-run"></i></span>
+              <form [formGroup]="hackathonForm" (ngSubmit)="createHackathon()">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Nome</label>
+                    <input class="form-control" formControlName="name" placeholder="HackUNI" />
                   </div>
-                  <input class="form-control" placeholder="Your name" type="text" (focus)="focus=true" (blur)="focus=false">
-                </div>
-              </div>
-              <div class="form-group" [ngClass]="{'focused':focus1===true}">
-                <div class="input-group input-group-alternative">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                  <div class="form-group col-md-6">
+                    <label>Tema</label>
+                    <input class="form-control" formControlName="theme" placeholder="AI for Good" />
                   </div>
-                  <input class="form-control" placeholder="Email address" type="email" (focus)="focus1=true" (blur)="focus1=false">
                 </div>
+                <div class="form-group">
+                  <label>Descrizione</label>
+                  <textarea rows="2" class="form-control" formControlName="description"></textarea>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Location</label>
+                    <input class="form-control" formControlName="location" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Stato</label>
+                    <select class="form-control" formControlName="status">
+                      <option value="draft">Draft</option>
+                      <option value="upcoming">Upcoming</option>
+                      <option value="running">Running</option>
+                      <option value="archived">Archived</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Capienza</label>
+                    <input class="form-control" type="number" formControlName="maxParticipants" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Iscrizioni: da</label>
+                    <input class="form-control" type="datetime-local" formControlName="registrationStart" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Iscrizioni: a</label>
+                    <input class="form-control" type="datetime-local" formControlName="registrationEnd" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Evento: inizio</label>
+                    <input class="form-control" type="datetime-local" formControlName="eventStart" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Evento: fine</label>
+                    <input class="form-control" type="datetime-local" formControlName="eventEnd" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Deadline consegna</label>
+                    <input class="form-control" type="datetime-local" formControlName="submissionDeadline" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Team min</label>
+                    <input class="form-control" type="number" formControlName="teamSizeMin" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Team max</label>
+                    <input class="form-control" type="number" formControlName="teamSizeMax" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Salva evento</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="mb-0">Tracks e registrazioni</h4>
+                <span class="badge badge-success">/api/hackathons/{id}/tracks</span>
               </div>
-              <div class="form-group mb-4">
-                <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
-              </div>
+              <form [formGroup]="trackForm" (ngSubmit)="addTrack()" class="mb-4">
+                <div class="form-row">
+                  <div class="form-group col-md-5">
+                    <label>Hackathon</label>
+                    <select class="form-control" formControlName="hackathonId">
+                      <option *ngFor="let h of hackathons" [value]="h.id">{{ h.name }}</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Track</label>
+                    <input class="form-control" formControlName="name" placeholder="AI" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Descrizione</label>
+                    <input class="form-control" formControlName="description" placeholder="Prodotti web" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-secondary">Aggiungi track</button>
+              </form>
+
+              <form [formGroup]="registrationForm" (ngSubmit)="registerUser()" class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="mb-0">Iscrizione utente</h6>
+                  <span class="badge badge-info">/api/hackathons/{id}/registrations</span>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Hackathon</label>
+                    <select class="form-control" formControlName="hackathonId">
+                      <option *ngFor="let h of hackathons" [value]="h.id">{{ h.name }}</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Nome completo</label>
+                    <input class="form-control" formControlName="fullName" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Email</label>
+                    <input class="form-control" formControlName="email" type="email" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Università</label>
+                    <input class="form-control" formControlName="university" />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Motivazione</label>
+                    <input class="form-control" formControlName="motivation" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Iscrivi</button>
+              </form>
+
               <div>
-                <button type="button" class="btn btn-default btn-round btn-block btn-lg">Send Message</button>
+                <h6 class="mb-2">Iscrizioni ricevute</h6>
+                <div *ngIf="registrations.length === 0" class="text-muted">Nessuna iscrizione ancora.</div>
+                <div *ngFor="let reg of registrations" class="d-flex align-items-center justify-content-between py-2 border-bottom">
+                  <div>
+                    <strong>{{ reg.fullName }}</strong> · {{ reg.email }}<br />
+                    <small class="text-muted">{{ reg.university }} — {{ reg.motivation }}</small>
+                  </div>
+                  <span class="badge" [ngClass]="{'badge-warning': reg.status==='PENDING', 'badge-success': reg.status==='APPROVED', 'badge-danger': reg.status==='REJECTED'}">{{ reg.status }}</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="section section-lg">
-    <div class="container">
-      <div class="row row-grid justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="display-3">Do you love this awesome
-            <span class="text-success">Design System for Angular?</span>
-          </h2>
-          <p class="lead">Cause if you do, it can be yours for FREE. Hit the button below to navigate to Creative Tim where you can find the Design System in Angular. Start a new project or give an old Angular project a new look!</p>
-          <div class="btn-wrapper">
-            <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page" class="btn btn-primary mb-3 mb-sm-0">Download Angular</a>
+
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="mb-0">Team &amp; inviti</h4>
+                <span class="badge badge-warning">/api/hackathons/{id}/teams</span>
+              </div>
+              <form [formGroup]="teamForm" (ngSubmit)="createTeam()" class="mb-4">
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Hackathon</label>
+                    <select class="form-control" formControlName="hackathonId">
+                      <option *ngFor="let h of hackathons" [value]="h.id">{{ h.name }}</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Track</label>
+                    <select class="form-control" formControlName="trackId">
+                      <option value="">Nessuna</option>
+                      <option *ngFor="let track of tracksForTeamForm" [value]="track.id">{{ track.name }}</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Owner</label>
+                    <input class="form-control" formControlName="owner" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Nome team</label>
+                  <input class="form-control" formControlName="name" />
+                </div>
+                <div class="form-group">
+                  <label>Descrizione</label>
+                  <textarea rows="2" class="form-control" formControlName="description"></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Membri (nome, email, ruolo opzionale per riga)</label>
+                  <textarea rows="3" class="form-control" formControlName="membersRaw" placeholder="Ada Lovelace, ada@example.com, participant"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Crea team</button>
+              </form>
+
+              <div>
+                <h6 class="mb-2">Team registrati</h6>
+                <div *ngIf="teams.length === 0" class="text-muted">Nessun team ancora creato.</div>
+                <div *ngFor="let team of teams" class="border rounded p-3 mb-2">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div>
+                      <strong>{{ team.name }}</strong> · <small class="text-muted">{{ team.description }}</small>
+                    </div>
+                    <span class="badge badge-light">{{ team.members.length }} membri</span>
+                  </div>
+                  <div class="text-muted mb-2">Track: {{ team.trackId || 'N/A' }} · Owner: {{ team.owner }}</div>
+                  <div class="mb-1"><strong>Membri:</strong> {{ team.members.map(m => m.fullName).join(', ') }}</div>
+                  <div *ngIf="team.invites.length">
+                    <strong>Inviti:</strong>
+                    <span *ngFor="let inv of team.invites" class="badge badge-pill ml-1" [ngClass]="{'badge-info': inv.status==='SENT', 'badge-success': inv.status==='ACCEPTED', 'badge-danger': inv.status==='DECLINED'}">{{ inv.email }} ({{ inv.status }})</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text-center">
-            <h4 class="display-4 mb-5 mt-5">Available on these technologies</h4>
-            <div class="row justify-content-center">
-              <div class="col-lg-2 col-4">
-                <a href="https://www.creative-tim.com/product/argon-design-system?ref=adsa-landing-page" target="_blank" placement="top" ngbTooltip="Bootstrap 4 - Most popular front-end component library">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/bootstrap.jpg" class="img-fluid">
-                </a>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="mb-0">Progetti &amp; consegne</h4>
+                <span class="badge badge-primary">/api/teams/{id}/projects</span>
               </div>
-              <div class="col-lg-2 col-4">
-                <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page" target="_blank" placement="top" ngbTooltip="Angular - One framework. Mobile &amp; desktop">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg" class="img-fluid">
-                </a>
+              <form [formGroup]="projectForm" (ngSubmit)="createProject()" class="mb-3">
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Team</label>
+                    <select class="form-control" formControlName="teamId">
+                      <option *ngFor="let team of teams" [value]="team.id">{{ team.name }}</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-8">
+                    <label>Titolo progetto</label>
+                    <input class="form-control" formControlName="title" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Descrizione</label>
+                  <textarea rows="2" class="form-control" formControlName="description"></textarea>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Repo URL</label>
+                    <input class="form-control" formControlName="repoUrl" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Demo URL</label>
+                    <input class="form-control" formControlName="demoUrl" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Pitch deck</label>
+                    <input class="form-control" formControlName="pitchDeckUrl" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Registra progetto</button>
+              </form>
+
+              <form [formGroup]="submissionForm" (ngSubmit)="submitArtifact()" class="mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="mb-0">Consegna finale</h6>
+                  <span class="badge badge-info">/api/projects/{id}/submissions</span>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-5">
+                    <label>Team</label>
+                    <select class="form-control" formControlName="teamId">
+                      <option *ngFor="let team of teams" [value]="team.id">{{ team.name }}</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-7">
+                    <label>Artifact URL</label>
+                    <input class="form-control" formControlName="artifactUrl" placeholder="https://storage..." />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Note</label>
+                  <input class="form-control" formControlName="notes" />
+                </div>
+                <button type="submit" class="btn btn-secondary">Salva consegna</button>
+              </form>
+
+              <form [formGroup]="scoreForm" (ngSubmit)="addScore()">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="mb-0">Valutazione giuria</h6>
+                  <span class="badge badge-success">/api/projects/{id}/scores</span>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Team</label>
+                    <select class="form-control" formControlName="teamId">
+                      <option *ngFor="let team of teams" [value]="team.id">{{ team.name }}</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Giudice</label>
+                    <input class="form-control" formControlName="judgeName" />
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Commento</label>
+                    <input class="form-control" formControlName="comment" />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-3">
+                    <label>Innovazione</label>
+                    <input type="number" min="1" max="5" class="form-control" formControlName="innovation" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Qualità tecnica</label>
+                    <input type="number" min="1" max="5" class="form-control" formControlName="technical_quality" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Impatto</label>
+                    <input type="number" min="1" max="5" class="form-control" formControlName="impact" />
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Presentazione</label>
+                    <input type="number" min="1" max="5" class="form-control" formControlName="presentation" />
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success">Registra voto</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <h4 class="mb-0">Classifica live</h4>
+                  <p class="text-muted mb-0">Calcolata dalla media dei criteri (innovazione, qualità tecnica, impatto, presentazione).</p>
+                </div>
+                <div class="form-inline">
+                  <label class="mr-2 mb-0">Hackathon</label>
+                  <select class="form-control" [(ngModel)]="selectedLeaderboardHackathon" (ngModelChange)="refreshLeaderboard()">
+                    <option *ngFor="let h of hackathons" [value]="h.id">{{ h.name }}</option>
+                  </select>
+                </div>
               </div>
-              <div class="col-lg-2 col-4">
-                <a href="https://www.creative-tim.com/product/vue-argon-design-system?ref=adsa-landing-page" target="_blank" placement="top" ngbTooltip="Vue.js - The progressive javascript framework">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg" class="img-fluid">
-                </a>
-              </div>
-              <div class="col-lg-2 col-4">
-                <a href="https://www.sketchapp.com/?ref=creative-tim" target="_blank" placement="top" ngbTooltip="[Coming Soon] Sketch - Digital design toolkit">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg" class="img-fluid opacity-3">
-                </a>
-              </div>
-              <div class="col-lg-2 col-4">
-                <a href="https://www.adobe.com/products/photoshop.html?ref=creative-tim" target="_blank" placement="top" ngbTooltip="[Coming Soon] Adobe Photoshop - Software for digital images manipulation">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/ps.jpg" class="img-fluid opacity-3">
-                </a>
-              </div>
-              <div class="col-lg-2 col-4">
-                <a href="https://reactjs.org/?ref=creative-tim" target="_blank" placement="top" ngbTooltip="[Coming Soon] React - A JavaScript library for building user interfaces">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg" class="img-fluid opacity-3">
-                </a>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Team</th>
+                      <th>Progetto</th>
+                      <th>Track</th>
+                      <th>Media</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let entry of leaderboard">
+                      <td>{{ entry.teamName }}</td>
+                      <td>{{ entry.projectTitle }}</td>
+                      <td>{{ entry.trackName || 'N/A' }}</td>
+                      <td>{{ entry.averageScore }}</td>
+                    </tr>
+                    <tr *ngIf="leaderboard.length === 0">
+                      <td colspan="4" class="text-muted">Ancora nessun punteggio inserito.</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
