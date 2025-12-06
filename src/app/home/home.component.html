@@ -1,8 +1,6 @@
 <main>
   <div class="position-relative">
-    <!-- Hero for FREE version -->
-    <section class="section section-lg section-hero section-shaped">
-      <!-- Background circles -->
+    <section class="section section-lg section-hero section-shaped overflow-hidden">
       <div class="shape shape-style-1 shape-primary">
         <span class="span-150"></span>
         <span class="span-50"></span>
@@ -17,15 +15,60 @@
       </div>
       <div class="container shape-container d-flex align-items-center py-lg">
         <div class="col px-0">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6 text-center">
-              <img src="./assets/img/brand/terraludyca.png" style="width: 200px;" class="img-fluid">
-              <p class="lead text-white">Terra Ludyca Corinaldo</p>
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6">
+              <h1 class="display-3 text-white">Hackathon Control Center</h1>
+              <p class="lead text-white">
+                A dedicated front-end for managing Terra Ludyca Hackathons with secure logins powered by
+                ApplicazioniuWebCloud, transparent participant onboarding, team creation and submission tracking.
+              </p>
+              <div class="btn-wrapper mt-4">
+                <a routerLink="/register" class="btn btn-success btn-icon mb-2">
+                  <span class="btn-inner--icon"><i class="ni ni-planet"></i></span>
+                  <span class="btn-inner--text">Register participants</span>
+                </a>
+                <a routerLink="/login" class="btn btn-white btn-icon mb-2 ml-md-2">
+                  <span class="btn-inner--icon"><i class="ni ni-lock-circle-open"></i></span>
+                  <span class="btn-inner--text">Organizer login</span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5 text-lg-right">
+              <div class="card shadow-lg border-0 dashboard-card">
+                <div class="card-body py-4 px-4">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h4 class="mb-0">Live metrics</h4>
+                    <div class="badge badge-primary">Secured</div>
+                  </div>
+                  <p class="text-muted mb-4">Synchronized with ApplicazioniuWebCloud.</p>
+                  <div *ngIf="errorMessage" class="alert alert-warning mb-3">{{ errorMessage }}</div>
+                  <div class="row text-center" *ngIf="metrics">
+                    <div class="col-6 mb-3">
+                      <div class="metric-value">{{ metrics.activeParticipants }}</div>
+                      <small class="text-muted">Participants</small>
+                    </div>
+                    <div class="col-6 mb-3">
+                      <div class="metric-value">{{ metrics.teams }}</div>
+                      <small class="text-muted">Teams</small>
+                    </div>
+                    <div class="col-6">
+                      <div class="metric-value">{{ metrics.submissions }}</div>
+                      <small class="text-muted">Submissions</small>
+                    </div>
+                    <div class="col-6">
+                      <div class="metric-value">{{ metrics.mentors }}</div>
+                      <small class="text-muted">Mentors</small>
+                    </div>
+                  </div>
+                  <div *ngIf="isLoading" class="text-center py-3">
+                    <span class="spinner-border text-primary" role="status"></span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- SVG separator -->
       <div class="separator separator-bottom separator-skew zindex-100">
         <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
@@ -33,5 +76,66 @@
       </div>
     </section>
   </div>
-  <app-sections></app-sections>
+
+  <section class="section bg-white pt-6 pb-5">
+    <div class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-md-7">
+          <h2 class="display-4">Everything you need to run a Hackathon</h2>
+          <p class="lead text-muted">Secure authentication, team orchestration, judging-ready submissions and rich reporting are all available out of the box.</p>
+        </div>
+        <div class="col-md-5 text-md-right">
+          <a routerLink="/landing" class="btn btn-primary">Explore platform guide</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-4" *ngFor="let feature of ['Role-based access for organizers and mentors','Team & participant registry mapped to ApplicazioniuWebCloud','Submission workflow with repository and demo links']">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="icon icon-shape bg-gradient-primary text-white rounded-circle shadow mb-3">
+                <i class="ni ni-app"></i>
+              </div>
+              <h5 class="h4">{{ feature.split(' ')[0] }}</h5>
+              <p class="text-muted">{{ feature }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-lg pt-0">
+    <div class="container">
+      <div class="row justify-content-between align-items-center mb-4">
+        <div class="col-lg-8">
+          <h3 class="mb-2">Upcoming & running hackathons</h3>
+          <p class="text-muted">Events stream live from ApplicazioniuWebCloud; you can safely test locally with the seeded fallback data.</p>
+        </div>
+        <div class="col-lg-4 text-lg-right">
+          <a routerLink="/register" class="btn btn-success">Enroll a team</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-4" *ngFor="let event of events">
+          <div class="card shadow border-0 h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="h4 mb-0">{{ event.name }}</h5>
+                <span class="badge badge-info text-uppercase">{{ event.status }}</span>
+              </div>
+              <p class="text-muted mb-2"><i class="ni ni-pin-3 mr-1"></i>{{ event.location }}</p>
+              <p class="text-sm text-muted">{{ event.tracks.join(', ') }}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-sm">Max team size: {{ event.maxTeamSize }}</span>
+                <span class="text-sm">Teams: {{ event.registeredTeams }}</span>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a routerLink="/landing" class="text-primary">View operations playbook</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>

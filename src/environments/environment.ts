@@ -3,7 +3,24 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  /**
+   * Base URL for the ApplicazioniuWebCloud backend. Override this per environment to
+   * target a different deployment of the API gateway.
+   */
+  apiBaseUrl: 'https://applicazioniuwebcloud.example.com',
+  /**
+   * Logical endpoints used by the Angular data services. Keeping the paths in one
+   * place makes it easier to point the UI at different backend stacks without
+   * touching the feature code.
+   */
+  endpoints: {
+    auth: '/auth',
+    hackathons: '/hackathons',
+    participants: '/participants',
+    teams: '/teams',
+    submissions: '/submissions'
+  }
 };
 
 /*
