@@ -41,7 +41,7 @@ export class HackathonService {
     return this.api
       .get<HackathonEvent[]>(this.hackathonPath)
       .pipe(
-        map((events) => events.sort((a, b) => a.startDate.localeCompare(b.startDate))),
+        map((events) => events.sort((a, b) => a.eventStart.localeCompare(b.eventStart))),
         catchError(() => of(this.buildFallbackEvents()))
       );
   }
@@ -67,23 +67,44 @@ export class HackathonService {
       {
         id: 'demo-1',
         name: 'AI for Good',
+        description: 'Weekend dedicato a soluzioni responsabili basate su AI.',
+        theme: 'AI',
         location: 'Remote-first',
         status: 'upcoming',
-        startDate: new Date().toISOString(),
-        endDate: new Date().toISOString(),
-        tracks: ['Sustainability', 'Health', 'Education'],
-        maxTeamSize: 5,
+        registrationStart: new Date().toISOString(),
+        registrationEnd: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+        eventStart: new Date(Date.now() + 8 * 24 * 60 * 60 * 1000).toISOString(),
+        eventEnd: new Date(Date.now() + 9 * 24 * 60 * 60 * 1000).toISOString(),
+        submissionDeadline: new Date(Date.now() + 9 * 24 * 60 * 60 * 1000).toISOString(),
+        tracks: [
+          { id: 'track-1', name: 'Sustainability', description: 'Energia, clima e circolarità' },
+          { id: 'track-2', name: 'Health', description: 'Salute digitale e prevenzione' },
+          { id: 'track-3', name: 'Education', description: 'Apprendimento personalizzato' }
+        ],
+        maxParticipants: 250,
+        teamSizeMin: 2,
+        teamSizeMax: 5,
         registeredTeams: 12
       },
       {
         id: 'demo-2',
         name: 'Open Data Challenge',
+        description: 'Esperienza ibrida su dataset pubblici e civic tech.',
+        theme: 'Open Data',
         location: 'Hybrid - Corinaldo',
         status: 'running',
-        startDate: new Date().toISOString(),
-        endDate: new Date().toISOString(),
-        tracks: ['Smart Cities', 'Transparency'],
-        maxTeamSize: 4,
+        registrationStart: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
+        registrationEnd: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+        eventStart: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+        eventEnd: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000).toISOString(),
+        submissionDeadline: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000).toISOString(),
+        tracks: [
+          { id: 'track-4', name: 'Smart Cities', description: 'Mobilità e servizi pubblici data-driven' },
+          { id: 'track-5', name: 'Transparency', description: 'Accountability e open government' }
+        ],
+        maxParticipants: 180,
+        teamSizeMin: 3,
+        teamSizeMax: 4,
         registeredTeams: 8
       }
     ];
