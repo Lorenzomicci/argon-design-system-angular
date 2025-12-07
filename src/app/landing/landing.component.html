@@ -196,7 +196,16 @@
                     <strong>{{ reg.fullName }}</strong> · {{ reg.email }}<br />
                     <small class="text-muted">{{ reg.university }} — {{ reg.motivation }}</small>
                   </div>
-                  <span class="badge" [ngClass]="{'badge-warning': reg.status==='PENDING', 'badge-success': reg.status==='APPROVED', 'badge-danger': reg.status==='REJECTED'}">{{ reg.status }}</span>
+                  <span
+                    class="badge"
+                    [ngClass]="{
+                      'badge-warning': reg.status === 'PENDING',
+                      'badge-success': reg.status === 'APPROVED',
+                      'badge-danger': reg.status === 'REJECTED'
+                    }"
+                  >
+                    {{ reg.status }}
+                  </span>
                 </div>
               </div>
             </div>
@@ -261,7 +270,17 @@
                   <div class="mb-1"><strong>Membri:</strong> {{ team.members.map(m => m.fullName).join(', ') }}</div>
                   <div *ngIf="team.invites.length">
                     <strong>Inviti:</strong>
-                    <span *ngFor="let inv of team.invites" class="badge badge-pill ml-1" [ngClass]="{'badge-info': inv.status==='SENT', 'badge-success': inv.status==='ACCEPTED', 'badge-danger': inv.status==='DECLINED'}">{{ inv.email }} ({{ inv.status }})</span>
+                    <span
+                      *ngFor="let inv of team.invites"
+                      class="badge badge-pill ml-1"
+                      [ngClass]="{
+                        'badge-info': inv.status === 'SENT',
+                        'badge-success': inv.status === 'ACCEPTED',
+                        'badge-danger': inv.status === 'DECLINED'
+                      }"
+                    >
+                      {{ inv.email }} ({{ inv.status }})
+                    </span>
                   </div>
                 </div>
               </div>

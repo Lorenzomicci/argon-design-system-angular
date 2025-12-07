@@ -134,8 +134,8 @@ export class MockHackathonService {
     this.teams$.next(
       this.teams$.getValue().map((team) => {
         if (team.id !== teamId) { return team; }
-        const invites = team.invites.map((invite) => invite.id === inviteId
-          ? { ...invite, status: accept ? 'ACCEPTED' : 'DECLINED' }
+        const invites: TeamInvite[] = team.invites.map((invite) => invite.id === inviteId
+          ? { ...invite, status: accept ? 'ACCEPTED' as const : 'DECLINED' as const }
           : invite);
         const acceptedInvite = invites.find((inv) => inv.id === inviteId && inv.status === 'ACCEPTED');
         const members = acceptedInvite
